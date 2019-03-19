@@ -26,10 +26,10 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+/* ::-moz-selection {
     background: #e85e00;
     color: white;
-    text-shadow: none;
+    text-shadow: none; */
 }
 
 ::selection {
@@ -160,6 +160,40 @@ a:focus {
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
+.o-row {
+    padding: 24px 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.o-row--primary {
+    color: white;
+    background: #e85e00;
+}
+
+.o-row--dark {
+    color: white;
+    background: #111;
+}
+
+@media (min-width: 768px) {
+    .o-row--lg {
+        padding: 48px 48px 24px;
+
+    }
+}
+
+/*
+    Objects: Container
+    ---
+    Creates a horizontal container that sets de global max-width
+*/
+
+.o-container {
+    margin: 0 auto;
+    max-width: 90em;
+}
+
 
 /*
     Object: Object name
